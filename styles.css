@@ -1,0 +1,245 @@
+/* styles.css */
+
+/* Main Content Background */
+.main-content {
+  /* background-image: url('./images/mainimg.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* Navbar Styling */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Highlight color */
+}
+
+/* Profile Image Styling */
+.profile-img {
+  border-radius: 10px; /* Slight rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.profile-img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15); /* Deepen shadow on hover */
+}
+
+/* About Me Section */
+.about-me {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.about-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-me p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.progress-bar-section h4 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Progress Bars Section */
+.progress {
+  height: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e9ecef;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Progress Bar Colors */
+#htmlProgress {
+  background-color: #28a745; /* Green for HTML */
+}
+#cssProgress {
+  background-color: #17a2b8; /* Blue for CSS */
+}
+#jsProgress {
+  background-color: #ffc107; /* Yellow for JavaScript */
+  color: #212529; /* Dark text for better contrast */
+}
+
+/* Progress Bar Text */
+.progress-bar {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  transition: width 1s ease-in-out; /* Smooth animation */
+}
+
+/* Glow Effect on Hover */
+.progress-bar {
+  position: relative;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.progress-bar:hover::after {
+  opacity: 1;
+}
+
+
+/* Contact Me Button Styling */
+.btn-contact {
+  background: linear-gradient(90deg, #007bff, #ff6600); /* Blue to Orange gradient */
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: all 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.btn-contact:hover {
+  background: linear-gradient(90deg, #ff6600, #007bff); /* Reverse gradient on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  transform: translateY(-5px); /* Lift effect */
+}
+
+/* Button Text Styling */
+.btn-contact:focus,
+.btn-contact:active {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(255, 102, 0, 0.25); /* Orange glow on focus */
+}
+
+
+/* Custom styling for the project images */
+/* Custom styling for the project images */
+.card-img-top {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular images */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect on image */
+}
+
+/* Adding spacing between cards */
+.projects .row {
+  margin-top: 40px;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.projects p {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+/* Hover Effect for Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift the card when hovered */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Hover Effect for Card Body */
+.card-body {
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.card:hover .card-body {
+  background-color: #f1f1f1; /* Change background color on hover */
+}
+
+
+  /* Style for the Typed.js text */
+  #typed-output {
+    font-weight: bold;         /* Make text bold */
+    color: #ff6347;            /* Set text color to tomato (you can choose any color) */
+    font-size: 2rem;           /* Optional: Adjust font size */
+  }
+
+
+
+/* Footer Styling (Optional) */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+/* Initial hidden state for the image */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px); /* Start with the image below its original position */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transition when it becomes visible */
+}
+
+/* Visible state for the image */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Custom styling for Bootstrap popovers */
+.bs-popover-auto .popover {
+  max-width: 300px; /* Limit the width of the popover */
+  background-color: #343a40; /* Dark background color */
+  color: #fff; /* Text color for contrast */
+  border-radius: 8px; /* Rounded corners for the popover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 15px; /* Padding inside the popover */
+}
+
+.bs-popover-auto .popover-header {
+  font-weight: bold; /* Bold header text */
+  font-size: 1.1rem; /* Slightly larger header font */
+  color: #f8f9fa; /* Light color for the header */
+  background-color: #495057; /* Dark background for header */
+  border-bottom: 1px solid #6c757d; /* Subtle border below header */
+}
+
+.bs-popover-auto .popover-body {
+  font-size: 1rem; /* Adjust the font size for body text */
+  color: #d1d1d1; /* Lighter text for the body */
+}
+
+/* Popover arrow styling */
+.bs-popover-auto .popover-arrow {
+  border-top-color: #495057; /* Match the arrow color with the header */
+}
